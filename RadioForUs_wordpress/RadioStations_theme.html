@@ -1,0 +1,1277 @@
+<!-- wp:html -->
+<style>
+#mensaje_latinchain {
+  background-color: #00ffff;
+  color: black;
+  padding: 5px;
+}
+
+#mensaje_latinchain a {
+  color: black;
+}
+
+#mensaje_return_latinchain {
+  background-color: #808080;
+  color: white;
+  padding: 5px;
+  display: none;
+}
+
+#mensaje_return_latinchain a {
+  color: white;
+}
+
+button {
+    margin: 2px;
+}
+h3 {
+    margin-top: 20px;
+}
+#stations_list {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #000;
+    padding: 15px;
+    overflow-y: auto;
+    height: 300px;
+    text-align: center;
+    width: 100%;
+}
+                        select {
+                            padding: 5px !important;
+                        }
+                        .goog-te-banner-frame.skiptranslate {
+                            display: none !important;
+                        }
+                        .skiptranslate > iframe {
+                            display: none !important;
+                        }
+                        
+                        body {
+                            top: 0px !important; 
+                        }
+
+                        .goog-te-menu-frame {
+                            max-width:100% !important; 
+                        }
+                        .goog-te-menu2 { 
+                            max-width: 100% !important;
+                            overflow-x: scroll !important;
+                            box-sizing:border-box !important; 
+                            height:auto !important; 
+                        }
+                        
+                        #goog-gt-tt, #goog-gt-, .goog-te-balloon-frame{display: none !important;} 
+                        .goog-text-highlight { background: none !important; box-shadow: none !important;}
+                        
+                        .goog-logo-link{display: none !important;}
+                        .goog-te-gadget{height: 34px !important;  overflow: hidden;}
+</style>
+
+<script type="text/javascript">
+                        function googleTranslateElementInit() {
+                              var lang_google='es';
+                              
+                              new google.translate.TranslateElement({pageLanguage: lang_google,
+                                                                    autoDisplay: true,
+                                                                    layout: google.translate.TranslateElement.InlineLayout.VERTICAL}, 
+                                                                    'google_translate_element');
+                             
+                                /*const el = document.querySelector('#goog-gt-');
+                                const el2 = document.querySelector('.skiptranslate');*/
+                                const el3 = document.querySelector('circle');
+                                //const el4 = document.querySelector('.goog-te-gadget');
+                                const observer = new window.IntersectionObserver(([entry]) => {
+                                    /*for(var i = 0; i &lt; document.getElementsByClassName("skiptranslate").length; i++)
+                                    {
+                                        for(var j = 0; j &lt; document.getElementsByClassName("skiptranslate")[i].childNodes.length; j++)
+                                        {
+                                            if(document.getElementsByClassName("skiptranslate")[i].childNodes[j].tagName == "IFRAME")
+                                                document.getElementsByClassName("skiptranslate")[i].style.display = "none";
+                                        }
+                                    }
+                                    document.getElementById("goog-gt-").style.display = "none";*/
+                                    document.getElementsByTagName("circle")[0].parentNode.parentNode.style.display = "none";
+                                }, {
+                                    root: null,
+                                    threshold: 0.1, // set offset 0.1 means trigger if atleast 10% of element in viewport
+                                });
+
+                                /*observer.observe(el);
+                                observer.observe(el2);*/
+                                observer.observe(el3);
+                                //observer.observe(el4);
+                          
+                        }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<div style="text-align:center">
+<br>Traductor:<br>
+<div id="google_translate_element"></div><br>
+</div>
+<style>
+
+.sticky { 
+position: fixed;
+top: 0px;
+padding-top: 20px;
+right:0px; 
+margin: 0; 
+width:100vw;
+background: white;
+z-index: 99999;
+text-align: center;
+display: none;
+}
+
+</style>
+
+
+<div class="sticky">
+<span class="mute_transmission"><i class="fa-solid fa-volume-off"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="volume_transmission"><i class="fas fa-volume-up"></i></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="" class="reload_page"><i class="fa-solid fa-rotate-right"></i></a>
+<br/><br/>
+<span class="backward_transmission"><i class="fa-solid fa-backward"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="pause_transmission"><i class="fa-solid fa-pause"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="play_transmission"><i class="fa-solid fa-play"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="forward_transmission"><i class="fa-solid fa-forward"></i></span>
+<br/>
+<span class="playing_on"></span>
+</div>
+
+<blockquote class="wp-block-quote has-text-align-center is-style-plain">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+<div style="text-align: center">
+
+
+</div>
+
+<div>
+<span class="mute_transmission"><i class="fa-solid fa-volume-off"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="volume_transmission"><i class="fas fa-volume-up"></i></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="" class="reload_page"><i class="fa-solid fa-rotate-right"></i></a>
+<br/><br/>
+<span class="backward_transmission"><i class="fa-solid fa-backward"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="pause_transmission"><i class="fa-solid fa-pause"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="play_transmission"><i class="fa-solid fa-play"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="forward_transmission"><i class="fa-solid fa-forward"></i></span>
+<br/>
+<span class="playing_on"></span>
+<br/><br/>
+<a href="https://discord.com/invite/UDnCQupMP6" target="_blank" rel="noopener"> 
+    <i class='fab fa-discord' style='font-size:36px'></i>
+</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://t.me/radioforusforpi" target="_blank" rel="noopener">
+          <i class="fab fa-telegram" aria-hidden="true" style="font-size:36px"></i>
+        </a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="social_button">
+          <i class="fa fa-share-alt" style="font-size:36px"></i>
+        </span>
+</div>
+
+<br/>
+
+<div style="text-align: center">
+<!--<a href="https://mainnet.radioforus.com/pidonation.html">Donar Pi</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<a href="https://github.com/pi-apps/LatinChain/tree/main/docs" target="_blank" rel="noopener">API Docs</a>
+</div>
+<div style="text-align: center" class="latinchain_pay" style="display:none">
+<br>
+<a href="https://test.latin-chain.com/radioforus" target="_blank" rel="noopener" class="latinchain_pay" style="display:none">Desbloquear otros 30 días desde hoy</a>
+</div>
+<div style="text-align: center" class="latinchain_pay" style="display:none">
+<br/>
+<a href="https://test.latin-chain.com/get-transactions-radioforus/" target="_blank" rel="noopener" class="latinchain_pay" style="display:none">Ver transacciones de desbloqueo</a>
+</div>
+<br/>
+<div style="text-align: center" id="mensaje_latinchain">
+</div>
+<br/>
+<div style="text-align: center" id="mensaje_return_latinchain">
+</div>
+
+</blockquote>
+
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ0TFNY9Y8"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-PJ0TFNY9Y8'); </script>
+
+<!-- modificacion Pi -->
+
+<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+
+        var unblocked = false;
+	
+	const Pi = window.Pi;
+	
+	$( document ).ready(function() {
+                            //$("#social_div").css("visibility", "visible");
+
+$(".sticky").hide();
+
+$(window).scroll(function(){ 
+
+if($(window).scrollTop() > 10)
+    $(".sticky").show();
+else
+    $(".sticky").hide();
+
+});
+
+                //$("svg.ast-menu-svg").hide();
+                $(".latinchain_pay").hide();
+
+                $(".latinchain_locked").prop('disabled', true);
+
+                $("#mensaje_latinchain").html("Entra con el Pi Browser, para poder escuchar todas las emisoras. Descarga Pi Browser desde <a href='https://play.google.com/store/apps/details?id=com.blockchainvault&pli=1' target='_blank'>Play Store</a> ó <a href='https://apps.apple.com/us/app/pi-network/id1445472541' target='_blank'>App Store</a>.");
+
+$("#mensaje_return_latinchain").html("");
+
+                $(".volume_transmission").click(function() {
+                    volumeAudio();
+                });
+
+                $(".mute_transmission").click(function() {
+                    muteAudio();
+                });
+
+                $(".pause_transmission").click(function() {
+                    pauseAudio();
+                });
+
+                $(".play_transmission").click(function() {
+                    playAudioAgain();
+                });
+		
+		Pi.init({ version: "2.0", sandbox: false });
+
+const sharedData = {
+                                title: 'RadioForUs para Pi',
+                                text: 'Hi. Check it out this Pi App: RadioForUs for Pi. Try it in Pi Browser.\n\nMainnet:\nhttps://mainnet.radioforus.com/\nTestnet:\nhttps://radioforus.com/\n\nTelegram: https://t.me/radioforusforpi\nDiscord: https://discord.com/invite/UDnCQupMP6',
+                            }
+
+                            //$("#social_div").css("visibility", "visible");
+                            
+const social = document.querySelector('.social_button');
+                            //const resultPara = document.querySelector('.result');
+                            
+                            // Must be triggered some kind of "user activation"
+                            social.addEventListener('click', async () => {
+                                if (!navigator.share) {
+                                    Pi.openShareDialog(sharedData.title, sharedData.text);
+                                }else
+                                {
+                                  try {
+                                    await navigator.share(sharedData);
+                                    //resultPara.textContent = 'MDN shared successfully'
+                                  } catch(err) {
+                                    //alert('Error: ' + err);
+                                  }
+                                }
+                            });
+
+		async function auth() {
+
+			try {
+				// Identify the user with their username / unique network-wide ID, and  qget permission to request payments from them.
+				const scopes = ['username', 'payments', 'wallet_address'];
+				function onIncompletePaymentFound(payment) {
+					
+				}; // Read more about this in the SDK reference
+
+				Pi.authenticate(scopes, onIncompletePaymentFound).then(function(auth) {
+					
+					var pi_user_id = auth.user.uid;
+					var pi_user_code = auth.user.username;
+					var accessToken = auth.accessToken;
+					
+					$.post("https://test.latin-chain.com/api/get-external-user", data={'pi_user_code': pi_user_code}, function(data, status){
+
+    $(".latinchain_pay").show();
+
+    $("#mensaje_return_latinchain").show();
+    $("#mensaje_return_latinchain").html("Nota: Cuando vayas a pagar ó ver transacciones, para desbloquear RadioForUs, recuerda darle click en volver en la parte superior izquierda del Pi Browser, para volver a RadioForUs. Gracias por usar nuestra Pi App!.");
+						if(data.result)
+						{
+							if(data.unblocked)
+							{
+                                                                var Difference_In_Days = data.days_available;
+                                                                
+								$(".latinchain_locked").prop('disabled', false);
+								$("#mensaje_latinchain").html("Usuario: <strong>" + pi_user_code + "</strong><br/>LatinChain: Desbloqueado. Súper!. Ahora puedes escuchar todas las emisoras de radio!. Días disponibles: " + Difference_In_Days + ".<br/>Último pago: " + data.unblocked_datetime);
+                                                                unblocked = true;
+							}else
+							{
+                                                                $('.latinchain_locked').each(function(index,item){
+                                                                    $(item).html("<div class='latinchain_locked_div'>" + $(item).text() + "</div>");
+                                                                });
+
+                                                                $(".latinchain_locked_div").click(function(){
+                                                                    location.href="#top";
+                                                                });
+								$(".latinchain_locked").prop('disabled', true);
+								$("#mensaje_latinchain").html("Usuario: <strong>" + pi_user_code + "</strong><br/>LatinChain: Bloqueado. Para poder escuchar todas las emisoras, debes hacer click en <a href='https://test.latin-chain.com/radioforus' target='_blank'>Pagar en LatinChain</a> y desbloquear pagando en Pi cada 30 días, para verificar tu usuario en LatinChain. Luego vuelve a esta página.");
+							}
+						}else
+						{
+                                                        $('.latinchain_locked').each(function(index,item){
+                                                            $(item).html("<div class='latinchain_locked_div'>" + $(item).text() + "</div>");
+                                                        });
+
+                                                        $(".latinchain_locked_div").click(function(){
+                                                            location.href="#top";
+                                                        });
+							$(".latinchain_locked").prop('disabled', true);
+							$("#mensaje_latinchain").html("Usuario: <strong>" + pi_user_code + "</strong><br/><br/>Usuario no encontrado en LatinChain. Para poder escuchar todas las emisoras, debes hacer click en <a href='https://test.latin-chain.com/radioforus' target='_blank'>Pagar en LatinChain</a> y desbloquear pagando en Pi cada 30 días, para verificar tu usuario en LatinChain. Luego vuelve a esta página.");
+						}
+					});
+					
+				}).catch(function(error) {
+					//Pi.openShareDialog("Error", error);
+					//alert(err);
+					console.error(error);
+				});
+			} catch (err) {
+				//Pi.openShareDialog("Error", err);
+				alert(err);
+				console.error(err);
+				// Not able to fetch the user
+
+			}
+		}
+		
+		auth();
+            
+  $(".forward_transmission").click(function(){
+    if(!unblocked)
+    {
+       $("button:not(.latinchain_locked)").each(function( index ) {
+        if($(this).css('color') == "rgb(255, 0, 0)")
+        {
+            //alert(index);
+            if(index == $("button:not(.latinchain_locked)").length-3)
+                $("button:not(.latinchain_locked)").get(1).click();
+            else
+                $("button:not(.latinchain_locked)").get(index+1).click();
+            return false;
+        }
+       }); 
+    }else{
+      $("button").each(function( index ) {
+        if($(this).css('color') == "rgb(255, 0, 0)")
+        {
+            if(index == $("button").length-3)
+                $("button").get(1).click();
+            else
+                $("button").get(index+1).click();
+            return false;
+        }
+      });
+    }
+  });
+
+  $(".backward_transmission").click(function(){
+    if(!unblocked)
+    {
+       $("button:not(.latinchain_locked)").each(function( index ) {
+        if($(this).css('color') == "rgb(255, 0, 0)")
+        {
+            //alert(index);
+            if(index == 1)
+                $("button:not(.latinchain_locked)").get($("button:not(.latinchain_locked)").length-3).click();
+            else
+                $("button:not(.latinchain_locked)").get(index-1).click();
+            return false;
+        }
+       }); 
+    }else{
+      $("button").each(function( index ) {
+        if($(this).css('color') == "rgb(255, 0, 0)")
+        {
+            if(index == 1)
+                $("button.latinchain_locked").last().click();
+            else
+                $("button").get(index-1).click();
+            return false;
+        }
+      });
+    }
+  });
+});
+
+</script>
+<!-- /wp:html -->
+
+<!-- wp:quote {"align":"center","className":"is-style-plain"} -->
+<blockquote class="wp-block-quote has-text-align-center is-style-plain"><!-- wp:paragraph -->
+<p><strong>🎉Announcing the August #PiHackathon Winner: RadioForUs!🎉</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://minepi.com/blog/august-2023-hackathon/">https://minepi.com/blog/august-2023-hackathon/</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><strong>La música es el lenguaje universal que conecta a la humanidad</strong> Henry Wadsworth Longfellow, Poeta estadounidense</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>¡Escucha, siente, conecta!  ¡Bienvenido a RadioForUs!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong><em>¡La primera App de emisoras de Radio del ecosistema Pi! </em></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":4328,"width":"297px","height":"auto","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://mainnet.radioforus.com/wp-content/uploads/2024/02/novo-1-552x1024.jpg" alt="" class="wp-image-4328" style="width:297px;height:auto"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:html -->
+<!DOCTYPE html>
+<html>
+  <head>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+      e.async = 1;
+      e.src = u;
+      e.id = i;
+      f.parentNode.insertBefore(e, f);
+    }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/radioforus-publisher/loader.js',
+  'tb_loader_script');
+  if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7188389010612251"
+     crossorigin="anonymous"></script>
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+(function() {
+  var host = 'www.themoneytizer.com';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.quantcast.com'
+    .concat('/choice/', '6Fv0cGNfc_bw8', '/', host, '/choice.js');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = { ...args[3], tag_version: 'V2' };
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+    <meta charset="utf-8">
+    <title>Reproductor de radio</title>
+  </head>
+  <body>
+<style>
+  h3 {
+    text-shadow: 1px 1px 3px #00FFFF;
+    font-family: 'Nunito', sans-serif;
+  }
+</style>
+<div id="stations_list">
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+
+  .intermitente {
+    animation: blink 2s infinite;
+    background-color: cyan;
+  }
+</style>
+
+
+    <h3>Los 40 Principales</h3>
+    <button data-src="https://25653.live.streamtheworld.com/LOS40AAC_SC">LOS 40 España</button>
+    <button data-src="https://radio4.domint.net:8114/stream" class="latinchain_locked">LOS 40 Costa Rica</button>
+    <button data-src="https://24063.live.streamtheworld.com/LOS40_PANAAC_SC" class="latinchain_locked">LOS 40 Panamá</button>
+    <button data-src="https://sonicpanel.hostradios.com/8796/stream" class="latinchain_locked">LOS40 Argentina</button>
+    <button data-src="https://26423.live.streamtheworld.com/LOS40_MEXICOAAC_SC?csegid=12000" class="latinchain_locked">LOS40 México DF</button>
+    <button data-src="https://radio4.domint.net:8114/stream" class="latinchain_locked">LOS40 Rep. Dominicana</button>
+    <button data-src="https://streaming.servicioswebmx.com/8260/stream" class="latinchain_locked">LOS40 Veracruz</button>
+    <button data-src="https://18153.live.streamtheworld.com/LOS40_MEXICO2AAC_SC" class="latinchain_locked">Los 40 Mexicali</button>
+<button data-src="https://25543.live.streamtheworld.com/LOS40_ASO_MANCHUELA.mp3" class="latinchain_locked">Los 40 Cuenca- Es</button>
+<button data-src="https://26583.live.streamtheworld.com/LOS40_COLOMBIAAAC_SC" class="latinchain_locked">Los 40 Colombia</button>
+<button data-src="https://14993.live.streamtheworld.com/LOS40_GUATEMALAAAC_SC?csegid=12000&dist=los40-web-live_streaming_play&pname=TDSdk" class="latinchain_locked">Los 40 Guatemala</button>
+
+<button data-src="https://streamingecuador.com:7051/stream?dist=los40-web-live_streaming_play" class="latinchain_locked">Los 40 Ecuador</button>
+<button data-src="https://24283.live.streamtheworld.com/LOS40_CHILEAAC.aac?time=1708085914057" class="latinchain_locked">Los 40 Chile</button>
+
+
+
+
+
+
+
+
+<h3>Latinoamérica</h3> 
+
+<button data-src="https://stream-142.zeno.fm/e2kzfpr34d0uv?zs=XNfIQdWkTEmzhQPtXcPkiw">Bailalo-Ve</button>
+<button data-src="https://stream-146.zeno.fm/0eacaa8937zuv?zs=EvqAQqZhRb23Igt11ZDsIA" class="latinchain_locked">Power FM HND</button>
+<button data-src="http://klaa.streamguys1.com/live" class="latinchain_locked">Rádio KLAA Angels</button>
+<button data-src="https://radio.forensedigital.gt:8030/stream" class="latinchain_locked">Gaita Zuliana-Ve</button>
+<button data-src="https://server6.globalhostla.com:9020/stream" class="latinchain_locked">Salsa Baul Caracas live-Ve</button>
+<button data-src="https://server01.heplayer.com/8140/;" class="latinchain_locked">Salsera-Ve</button>
+<button data-src="https://stream-158.zeno.fm/4hwm2v4xbg8uv?zs=KhOrK9y4SY671FPVHHgYrA" class="latinchain_locked">Salsa 24hrs</button>
+<button data-src="http://stream-153.zeno.fm/07brb24epkhvv?zs=W2FNfISSSziOwhCFnfoZaA" class="latinchain_locked">Variadas-Ve</button>
+<button data-src="https://stream-052.zeno.fm/umfxbbrcwnhvv?zs=Wl48x0h_SAS5fPesLPPzWw" class="latinchain_locked">Éxitos Pto Ordaz-Ve</button>
+<button data-src="https://ads92.radioonlinehd.com:8020/naranjeranorte" class="latinchain_locked">La Naranjera-Mx</button>
+<button data-src="https://sc10.conectarhosting.com/proxy/metro2?mp=%2Fstream%3B" class="latinchain_locked">MetrópoliFM-Ve</button>
+<button data-src="https://server6.globalhostla.com:9166/stream" class="latinchain_locked">Sabor106Mcbo-Ve</button>
+<button data-src="https://acp4.lorini.net/proxy/ur2050?mp=%2Fstream" class="latinchain_locked">Circuito Onda-Ve</button>
+<button data-src="https://stream-165.zeno.fm/ahbyctf81mzuv?zs=luF1aYTDRniS4fm31NCykQ" class="latinchain_locked">Bailable Ecuador </button>
+<button data-src="https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_89FM_ADP_SC?dist=site-89fm" class="latinchain_locked">Rádio 89 FM-Br</button>
+<button data-src="https://servidor18.brlogic.com:7484/live" class="latinchain_locked">Ouro Verde-Br</button>
+<button data-src="https://stm01.virtualcast.com.br:8000/live" class="latinchain_locked">Rádio Massa-Br</button>
+<button data-src="https://ssl.xcast.com.br:7296/;" class="latinchain_locked">Folklore Argentino-Ar</button>
+<button data-src="http://stream-160.zeno.fm/y56t3fd9s18uv?zs=4E5PNI1QQs-1KfAh0xE5pQ" class="latinchain_locked">Rock Argentino-Ar</button>
+<button data-src="https://cloudstream2032.conectarhosting.com:7311/;" class="latinchain_locked">Gigante94.9-Bol</button>
+<button data-src="https://unlimited5-us.dps.live/biobiosantiago/aac/icecast.audio" class="latinchain_locked">BioBio-Cl</button>
+<button data-src="https://26493.live.streamtheworld.com/OLP_MEDELLINAAC_SC?dist=OlpMedWeb" class="latinchain_locked">Olimpica de Medellín.Co</button>
+<button data-src="https://server6.globalhostla.com:9012/stream" class="latinchain_locked">Fiesta FM-Ve</button>
+<button data-src="https://streaming.ecuastreaming.com/9958/stream" class="latinchain_locked">Radio Cristal-Ec</button>
+<button data-src="https://rds3.desdeparaguay.net:8002/abcfm" class="latinchain_locked">ABC-Py</button>
+<button data-src="https://us-b5-p-e-kj2-audio.cdn.mdstrm.com/live-audio-aw/5fab0687bcd6c2389ee9480c?aid=5faaeb72f92d7b07dfe10181&pid=1tkg3TIEO9ZZrUlFkTrZ9Z5UxaXUzl9R&sid=2FMMmFpL6cOiTnXkbpvaU8pdJrBit6os&uid=my5fgsoH5Qsp79zqJOyaBfKba18D8Et0&es=us-b5-p-e-kj2-audio.cdn.mdstrm.com&ote=1687264491002&ot=ZjV5ybpGH2YjNVPANvdGiA&proto=https&pz=us&cP=128000&awCollectionId=5faaeb72f92d7b07dfe10181&liveId=5fab0687bcd6c2389ee9480c&listenerId=my5fgsoH5Qsp79zqJOyaBfKba18D8Et0" class="latinchain_locked">Oxígeno-Pe</button>
+<button data-src="https://salida.stream.com.uy:8506/stream" class="latinchain_locked">Éxitos-Uy</button>
+<button data-src="https://server7.servistreaming.com/proxy/radioisla?_=1&mp=%2Fstream%3Ftype%3D.mp3" class="latinchain_locked">Isla 1320-PR</button>
+<button data-src="https://icecast.teveo.cu/McW3fLhs" class="latinchain_locked">Radio La Habana - Cu</button>
+<button data-src="https://streamingcwsradio30.com/8156/stream" class="latinchain_locked">El Salvador96.9-SLV</button>
+<button data-src="https://streaming.rcs.com.sv/8004/stream" class="latinchain_locked">Urbana-SLV</button>
+<button data-src="https://halo.streamerr.co/radio/8110/radio.mp3" class="latinchain_locked">Clásicos Costa Rica-CR</button>
+<button data-src="https://radio5.domint.net:8222/stream" class="latinchain_locked">Alofoke99.3-RD</button>
+<button data-src="https://centova.hostingelectrica.net/proxy/radiola2/stream" class="latinchain_locked">La Jefa-Ni</button>
+<button data-src="https://icecast.teveo.cu/zrXXWK9F" class="latinchain_locked">Rebelde-Cu</button>
+<button data-src="https://www.streaming507.net:8136/stream" class="latinchain_locked">Lo Nuestro FM-Pa</button>
+<button data-src="https://stream-141.zeno.fm/pnq889awd6quv?zs=KqJKmVgGSX2ZsXixfboBCQ" class="latinchain_locked">La Tronadora GT</button>
+<button data-src="https://stream-155.zeno.fm/nsa6t0hzaphvv?zs=8epaPa93T9OExHmu5MP-Rg" class="latinchain_locked">La Musiquera-Hn</button>
+<button data-src="https://ais-edge103-live365-dal02.cdnstream.com/a53326" class="latinchain_locked">Miami One-USA</button>
+<button data-src="https://icecast.teveo.cu/XjfW7qWN" class="latinchain_locked">Radio Progreso -Cu</button>
+
+<h3>Europa</h3> 
+<button data-src="https://icast.connectmedia.hu/5201/live.mp3">Hungría</button>
+<button data-src="https://icecast.radiofrance.fr/franceinfo-midfi.mp3" class="latinchain_locked">Francia FM</button>
+<button data-src="https://streaming.shoutcast.com/gozadera" class="latinchain_locked">Gozadera FM</button>
+<button data-src="http://stream-icy.bauermedia.pt/m80.mp3" class="latinchain_locked">M80 Portugal</button>
+<button data-src="https://f121.rndfnk.com/ard/dlf/01/aac/192/stream.aac?aggregator=web&cid=01FBPWZ12X2XN8SDSMBZ7X0ZTT&sid=2aSGiXUCxV2B99g6c8C5pl9AUMB&token=lwzscDSYcOUeImalQB8fCnZ55UXEkfpOxr7wFhNjLRc&tvf=9A_J5Lv7phdmMTIxLnJuZGZuay5jb20" class="latinchain_locked">DLF Alemania</button>
+<button data-src="https://rockfm-cope-rrcast.flumotion.com/cope/rockfm.mp3" class="latinchain_locked">Rock FM</button>
+<button data-src="https://23613.live.streamtheworld.com/LOS40AAC.aac?csegid=10000" class="latinchain_locked">Premium Madrid - España</button>
+<button data-src="https://megastar-cope-rrcast.flumotion.com/cope/megastar.mp3" class="latinchain_locked">MegaStar FM</button>
+<button data-src="https://bbhitfm.kissfmradio.cires21.com/bbhitfm.mp3?wmsAuthSign=c2VydmVyX3RpbWU9MDYvMDMvMjAyMyAxMjo0NzoxMCBQTSZoYXNoX3ZhbHVlPU15dkRiVExZRXRGZmliYkxxWHNtMEE9PSZ2YWxpZG1pbnV0ZXM9MTQ0MCZpZD0xMjA0Nzg0NDA=" class="latinchain_locked">BB Hit FM</button>
+<button data-src="https://stream-154.zeno.fm/k2c9kp76xhruv?zs=V2GRy7TOTzeuaa4BN2gX9Q" class="latinchain_locked">Q Radio</button>
+<button data-src="https://scdn.nrjaudio.fm/fr/30201/mp3_128.mp3?origine=mytuner&cdn_path=adswizz_lbs7&access_token=88d4bffd0c42480ca5bc36482d8c2bed" class="latinchain_locked">NRJ</button>
+<button data-src="https://icecast.radiofrance.fr/franceculture-midfi.mp3" class="latinchain_locked">Radio Francia</button>
+<button data-src="https://stream.rfm.fr/rfm.mp3?aw_0_1st.playerid=lgrdrnwsradio-en-lignefr" class="latinchain_locked">Nostalgie</button>
+<button data-src="https://scdn.nrjaudio.fm/fr/30401/mp3_128.mp3?origine=mytuner&cdn_path=adswizz_lbs9&access_token=4339ba01282b40c4aaa666b7e04560c5" class="latinchain_locked">NRJ FM</button>
+<button data-src="https://media-ssl.musicradio.com/Gold" class="latinchain_locked">Gold Radio UK</button>
+<button data-src="https://ice.creacast.com/sudradio" class="latinchain_locked">Sud Radio Italia</button>
+<button data-src="http://andromeda.shoutca.st:8634/stream1" class="latinchain_locked">Andromeda Radio</button>
+<button data-src="https://stream-icy.bauermedia.pt/comercial.aac" class="latinchain_locked">Comercial Radio Portugal</button>
+
+<h3>Asia</h3>
+<button data-src="https://antares.dribbcast.com/proxy/kpop?mp=%2Fs">Korea</button>
+<button data-src="https://stream-158.zeno.fm/4q7y9hvkp2zuv?zs=HHj-IydeRvuforRLBUxZMQ&aw_0_req_lsid=8196d2c78a734f244852a3f8bbbecbcb&" class="latinchain_locked">Vietnam</button>
+<button data-src="http://media.kythuatvov.vn:7001/;stream/" class="latinchain_locked">Vietnam</button>
+<button data-src="https://ice1.streeemer.com:8030/radio.aac" class="latinchain_locked">Korea Hits</button>
+<button data-src="https://lhttp.qingting.fm/live/4921/64k.mp3" class="latinchain_locked">China Pop</button>
+<button data-src="https://stream-156.zeno.fm/ex6ng25chfhvv?zs=lnSojziGSsK_CAQw2XTfhw" class="latinchain_locked">Tzgospel South Korea</button>
+<button data-src="https://ice1.streeemer.com:8030/radio.mp3" class="latinchain_locked">Corea</button>
+<button data-src="https://stream-156.zeno.fm/ubw5g9v6hrruv?zs=ODfRUZr5TzGiyDdj0k17Tg" class="latinchain_locked">India</button>
+<button data-src="https://stream-159.zeno.fm/kvpm9a0pb2zuv?zs=VZpih4DWTF2vPAiCpUCx2w" class="latinchain_locked">Malur, India</button>
+<button data-src="https://audio.bigbigtomato.com/stream" class="latinchain_locked">China</button>
+<button data-src="https://azulpop.ozelip.com:8006/stream" class="latinchain_locked">Turquía</button>
+<button data-src="http://audiostreaming.itworkscdn.com:9018/stream" class="latinchain_locked">Líbano</button>
+<button data-src="https://23733.live.streamtheworld.com/MINNAL_FMAAC_SC?dist=triton-web&pname=StandardPlayerV4" class="latinchain_locked">Malasia</button>
+<button data-src="https://s3.radio.co/sd43d6cc6d/listen" class="latinchain_locked">Filipinas</button>
+<button data-src="https://stream-145.zeno.fm/wtuvp08xq1duv?zs=6Box4ukxTFylxPfPYcp8vg" class="latinchain_locked">Nepal</button>
+<button data-src="http://83.169.36.75:8000/stream" class="latinchain_locked">Armenia</button>
+<button data-src="http://shonanbeachfm.out.airtime.pro:8000/shonanbeachfm_a" class="latinchain_locked">Japón</button>
+<button data-src="https://stream-148.zeno.fm/8wv4d8g4344tv?zs=a8tYkuLMSUKmNrgI8NvINA" class="latinchain_locked">Bangladesh</button>
+<button data-src="http://phileradio.com:8193/89FM" class="latinchain_locked">Chipre</button>
+<button data-src="https://19253.live.streamtheworld.com/AFNP_OSN_SC" class="latinchain_locked">OSN SC</button>
+
+<h3>África</h3>
+<button data-src="https://webradio1.ice.infomaniak.ch/webradio4-128.mp3">Rumba Africa</button>
+<button data-src="https://radiomars.ice.infomaniak.ch/radiomars-128.mp3" class="latinchain_locked">Radio Mars</button> 
+<button data-src="https://eu1.fastcast4u.com/proxy/prontofm?mp=%2F167" class="latinchain_locked">Pronto FM</button> 
+<button data-src="https://webradio.tda.dz/Jeunesse_64K.mp3" class="latinchain_locked">Jil FM Argelia</button>
+<button data-src="https://icecast.skyrock.net/s/alger_aac_128k?tvr_name=mytuner&tvr_section1=64aac69" class="latinchain_locked">Skyrock Alger</button>
+<button data-src="https://stream-161.zeno.fm/xda10sbtsg0uv?zs=Ce666PaiRzqF24WIWexB-A" class="latinchain_locked">RBMA Radio</button>
+<button data-src="http://rdj966.net:8000/rdj966.mp371" class="latinchain_locked">RDJ 96.6 FM</button> 
+<button data-src="https://ahmsamir.radioca.st/stream" class="latinchain_locked">Radio Sawa Levant</button>
+<button data-src="https://9090streaming.mobtada.com/9090FMEGYPT" class="latinchain_locked">Nile FM 90.9</button>
+
+<h3>Oceanía</h3>
+
+<button data-src="https://ice10.securenetsystems.net/WVUV">WVUV 94.1 FM</button>
+<button data-src="https://18093.live.streamtheworld.com/SP_R3643255_SC" class="latinchain_locked">Samoa</button>
+<button data-src="https://21363.live.streamtheworld.com/ARN_KIIS1065AAC.aac?dist=mytuner" class="latinchain_locked">Sydney's KIIS 106.5</button>
+<button data-src="https://21333.live.streamtheworld.com/SMOOTH915_AAC48_SC" class="latinchain_locked">Smooth 91.5 FM</button>
+<button data-src="https://27253.live.streamtheworld.com/T_RAD_HITS_S01_SC" class="latinchain_locked">Traxx FM Hits</button>
+<button data-src="http://s2.viastreaming.net:7100/;?_=0.7381226735180904" class="latinchain_locked">ViaStreaming</button>
+<button data-src="https://21413.live.streamtheworld.com/ARN_WSFMAAC.aac?dist=mytuner" class="latinchain_locked">ARN</button>
+<button data-src="http://live-radio01.mediahubaustralia.com/2FMW/aac/" class="latinchain_locked">Vw Radio</button>
+<button data-src="https://21423.live.streamtheworld.com/SMOOTHRELAX_SYD_AAC_SC?dist=neweb&pname=TDSdk" class="latinchain_locked">Vive</button>
+<button data-src="http://live-radio01.mediahubaustralia.com/PBW/aac/" class="latinchain_locked">FM</button>
+
+
+
+
+<h3>Pedidas por ustedes</h3>
+<button data-src="https://f121.rndfnk.com/ard/dlf/01/aac/192/stream.aac?aggregator=web&cid=01FBPWZ12X2XN8SDSMBZ7X0ZTT&sid=2aSGiXUCxV2B99g6c8C5pl9AUMB&token=lwzscDSYcOUeImalQB8fCnZ55UXEkfpOxr7wFhNjLRc&tvf=9A_J5Lv7phdmMTIxLnJuZGZuay5jb20">DLF Deutschlandfunk</button>
+
+<button data-src="https://streaming.shoutcast.com/gozadera">Gozadera FM</button>
+
+
+<button data-src="https://18253.live.streamtheworld.com/KRQBFM_SC?dist=webdesktop">Rádio KBUE Que Buena 105.5 - LA</button>
+
+
+<h3>Rockerísimas</h3>
+<button data-src="https://cheetah.streemlion.com/BCRRadio?x=1685118984771">BCR Rock</button>
+<button data-src="https://servidor40-4.brlogic.com:8044/live" class="latinchain_locked">91 Rock Brasil</button>
+<button data-src="https://26733.live.streamtheworld.com/RADIO_89FM_ADP_SC?dist=site-89fm" class="latinchain_locked">Radio 89FM</button>
+<button data-src="https://gold.streamguys1.com/softrock.mp3" class="latinchain_locked">Soft Rock</button> 
+<button data-src="https://14843.live.streamtheworld.com/SAM07AAC001_SC" class="latinchain_locked">Sam Rock</button>
+<button data-src="https://sarock.radioca.st/stream" class="latinchain_locked">Sa Rock</button>
+<button data-src="https://rockfm-cope-rrcast.flumotion.com/cope/rockfm-low.mp3" class="latinchain_locked">Low Rock </button>
+<button data-src="https://rockfm-cope-rrcast.flumotion.com/cope/rockfm.mp3" class="latinchain_locked">Rock FM</button>
+<button data-src="http://www.radiorockfm.co.nz:8000/listenlive" class="latinchain_locked">Radio Rock FM</button>
+<button data-src="https://paineldj6.com.br:20142/stream" class="latinchain_locked">Panel Rock</button>
+<button data-src="https://ice.abradio.cz/rockmax128.mp3" class="latinchain_locked">Rock Max</button>
+<button data-src="https://icecast6.play.cz/casrock128.mp3" class="latinchain_locked">Cas Rock</button>
+<button data-src="https://cast2.my-control-panel.com/proxy/vladas/stream" class="latinchain_locked">Rock Control</button>
+<button data-src="http://stream-159.zeno.fm/ne5c3p44puquv?zs=z7xM0zsMQyS_85FTm7jE9Q" class="latinchain_locked">FM Rock</button>
+<button data-src="https://gold.streamguys1.com/softrock.mp3" class="latinchain_locked">FM Rock-EEUU</button>
+<button data-src="https://25583.live.streamtheworld.com/ROCK_RADIO_SC" class="latinchain_locked">FM Rock- Rep. Checa</button>
+<button data-src="https://kathy.torontocast.com:2800/;" class="latinchain_locked">Metal Rock-EEUU</button>
+
+<h3>Bachatas</h3>   
+<button data-src="https://radio.dominiserver.com/proxy/topbachata?mp=%2Fstream%3Fver%3D341371">Top Bachata-RD</button>
+<button data-src="https://mi.tamarezradio.com:8020/;" class="latinchain_locked">Bachata 3.1 Ve</button>
+<button data-src="http://stream-150.zeno.fm/m5g4yefhdc9uv?zs=_fMTPu8CTuucyCY6aABN3Q" class="latinchain_locked">Bachateando</button>
+<button data-src="https://stream-156.zeno.fm/hfxhmy6p5yzuv?zs=DwUAFPP9QGCsxYWMOswxAQ" class="latinchain_locked">Bach Ata</button>
+<button data-src="https://jm8n.com/8084/stream" class="latinchain_locked">Latinos</button>
+<button data-src="https://radio.dominiserver.com/proxy/topbachata?mp=%2Fstream%3Fver%3D341371" class="latinchain_locked">Dominiserver</button>
+<button data-src="https://stream-152.zeno.fm/0ixia3kotmfuv?zs=KWXlwlCRTgCSvySDt7SPPg" class="latinchain_locked">PP Music</button>
+<button data-src="http://stream-151.zeno.fm/3vpeyrdmrc9uv?zs=8gFkYIhlQPa8eGU_tGAK-A" class="latinchain_locked">La Sonora</button>
+<button data-src="https://jm8n.com/8084/stream" class="latinchain_locked">Bachata Radio-RD</button>
+<button data-src="https://stream-159.zeno.fm/06p2q8z94p8uv?zs=92XftFKmRlW7rNJ3qfw5hA" class="latinchain_locked">Jumbo Bachata- EC</button>
+<button data-src="https://radiobachatanet.radioca.st/;" class="latinchain_locked">Bachatera</button>
+<button data-src="https://latinabachata.ice.infomaniak.ch/latinabachata.mp3" class="latinchain_locked">Latin Bachata</button>
+
+
+<h3>80's  &  90's</h3>
+<button data-src="http://s02.fjperezdj.com:8000/live">Loca FM 90´</button>
+<button data-src="https://radios.sonidoshd.com:7028/" class="latinchain_locked">90 Hit</button>
+<button data-src="http://198.245.51.58:10879/Canal90" class="latinchain_locked">Canal 90</button>
+<button data-src="https://tupanel.info:9800/" class="latinchain_locked">Tu Radio</button>
+<button data-src="https://icecast-qmusicbe-cdp.triple-it.nl/joe_80s_90s.aac?dist=mytuner&gdpr=1&pname=redirect-service" class="latinchain_locked">80's 90's</button>
+<button data-src="https://stream-162.zeno.fm/g69brm53t8quv?zs=5YUBdld4QxSQd_Z5Vddocg" class="latinchain_locked">Viejitas</button>
+
+<h3>Solo ese Cantante</h3>
+<button data-src="https://streaming.exclusive.radio/er/shakira/icecast.audio
+">Shakira</button>
+<button data-src="https://streaming.exclusive.radio/er/abba/icecast.audio" class="latinchain_locked">Abba</button>
+<button data-src="https://streaming.exclusive.radio/er/edsheeran/icecast.audio
+" class="latinchain_locked">Ed Sheeran
+</button>
+<button data-src="https://mp3.planetradio.de/plrchannels/hqstars13.mp3?amsparams=playerid:RTFFHRadioDE;skey:1692561528
+" class="latinchain_locked">The Weeknd
+</button>
+<button data-src="https://stream-142.zeno.fm/rebfuhvwcuhvv?zs=f7zIaMQ1TcC-E9WBsLMRqw
+" class="latinchain_locked">Bad Bunny
+</button>
+<button data-src="https://streaming.exclusive.radio/er/katyperry/icecast.audio
+" class="latinchain_locked">Katy Perry
+</button>
+<button data-src="https://streaming.exclusive.radio/er/mileycyrus/icecast.audio
+" class="latinchain_locked">Miley Cyrus
+</button>
+<button data-src="https://streaming.exclusive.radio/er/dualipa/icecast.audio
+" class="latinchain_locked">Dua Lipa
+</button>
+<button data-src="https://streaming.exclusive.radio/er/taylorswift/icecast.audio
+" class="latinchain_locked">Taylor Swift
+</button>
+<button data-src="https://streaming.exclusive.radio/er/harrystyles/icecast.audio
+" class="latinchain_locked">Harry Styles
+</button>
+<button data-src="https://streaming.exclusive.radio/er/beyonce/icecast.audio
+" class="latinchain_locked">Beyonce
+</button>
+<button data-src="https://mp3.planetradio.de/plrchannels/hqstars04.mp3?amsparams=playerid:RTFFHRadioDE;skey:1692558706
+" class="latinchain_locked">Lady Gaga
+</button>
+<button data-src="https://streaming.exclusive.radio/er/adele/icecast.audio
+" class="latinchain_locked">Adele
+</button>
+<button data-src="https://streaming.exclusive.radio/er/arethafranklin/icecast.audio
+" class="latinchain_locked">Aretha Franklin
+</button>
+<button data-src="https://mfmwr-023.ice.infomaniak.ch/mfmwr-023.mp3
+" class="latinchain_locked">Celin Dion
+</button>
+<button data-src="https://streaming.exclusive.radio/er/whitneyhouston/icecast.audio
+" class="latinchain_locked">Whitney Houston
+</button>
+<button data-src="https://pub0302.101.ru:8443/stream/pro/aac/64/111
+" class="latinchain_locked">Elvis Presley
+</button>
+<button data-src="https://streaming.exclusive.radio/er/bonjovi/icecast.audio
+" class="latinchain_locked">Bon Jovi
+</button>
+<button data-src="https://regiocast.streamabc.net/regc-80s80smicjac6506662-mp3-192-3954067?
+" class="latinchain_locked">Michael Jackson
+</button>
+<button data-src="https://listen.181fm.com/181-beatles_128k.mp3
+" class="latinchain_locked">The Beatles
+</button>
+<button data-src="https://streaming.exclusive.radio/er/raycharles/icecast.audio
+" class="latinchain_locked">Ray Charles
+</button>
+
+<h3>Ni tan Pesado</h3>
+<button data-src="https://metallica.hostingradio.ru/metallica96.aacp
+">Metallica</button>
+<button data-src="https://streaming.exclusive.radio/er/pinkfloyd/icecast.audio
+" class="latinchain_locked">Pink Floyd
+</button>
+<button data-src="https://streaming.exclusive.radio/er/acdc/icecast.audio
+" class="latinchain_locked">AC/DC
+</button>
+<button data-src="https://streaming.exclusive.radio/er/coldplay/icecast.audio
+" class="latinchain_locked">ColdPlay</button>
+<button data-src="https://streaming.exclusive.radio/er/u2/icecast.audio" class="latinchain_locked">U2
+</button>
+
+
+<h3>Deportes</h3>
+<button data-src="https://n1aa-e2.revma.ihrhls.com/zc4732?rj-ttl=5&rj-tok=AAABi0MbDrsAYnCFDI6BccATAg">FOX Sports - EN</button>
+<button data-src="https://prod-3-93-164-218.amperwave.net/espn-network-48?session-id=bddb604431806d09c0d9eb703bc7844d" class="latinchain_locked">ESPN Radio - EN</button>
+
+
+<button data-src="https://20723.live.streamtheworld.com/CADENASERAAC_SC" class="latinchain_locked">Cadena SER deportes- ES</button>
+
+
+<button data-src="https://prod-3-93-164-218.amperwave.net/espn-network-48?session-id=3453aeccb4dd3c39dfd92f8d46b466a1" class="latinchain_locked">WEPN ESPN New York - EN</button>
+
+<button data-src="https://26433.live.streamtheworld.com/TDW730AMAAC_SC?csegid=10000" class="latinchain_locked">W Deportes - ES</button>
+
+<button data-src="https://26433.live.streamtheworld.com/TDW730AMAAC_SC?csegid=10000" class="latinchain_locked">W Deportes - MX</button>
+
+<button data-src="https://27443.live.streamtheworld.com/LA_RED_AM910AAC_SC" class="latinchain_locked">La Red AM - AR</button>
+
+
+
+</div>
+<section id="seccion1" style="scroll-margin-top: 15px;">
+  <!-- Contenido de la sección 1 -->
+  
+<script src="https://apis.google.com/js/platform.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      var player = new Audio();      // Crea un nuevo elemento Audio
+      var lastBtn;                   // variable para almacenar el último botón seleccionado
+      var station_name = "";
+      var playing_on = "";
+      var muted_on = "";
+      var is_playing = false;
+      var last_station = 1;
+
+      // Set a Cookie
+      function setCookie(cName, cValue) {//, expDays) {
+          //var date = new Date();
+          //date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+          //const expires = "expires=" + date.toUTCString();
+          document.cookie = cName + "=" + cValue + "; path=/";
+          //document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+          var cookiesEnabled = document.cookie.indexOf(cName+'=') !== -1;
+          if(!cookiesEnabled)
+              if(cName == "last_station")
+                  last_station = cValue;
+      }
+      
+      function getCookie(cName) {
+          var cookiesEnabled = document.cookie.indexOf(cName+'=') !== -1;
+          if(!cookiesEnabled)
+              if(cName == "last_station")
+                  return last_station;
+
+          const name = cName + "=";
+          const cDecoded = decodeURIComponent(document.cookie); //to be careful
+          const cArr = cDecoded.split('; ');
+          var res = "";
+          cArr.forEach(val => {
+              if (val.indexOf(name) === 0) res = val.substring(name.length);
+          })
+          return res;
+      }
+
+      if(getCookie("last_station") == "")
+          setCookie("last_station", 1);
+      else
+          setCookie("last_station", getCookie("last_station"));
+
+      function playAudio(src) {      // Función para reproducir audio
+        
+        if(station_name == "")
+        {
+            playing_on = $(".playing_on");
+            playing_on.text("Selecciona una emisora");
+        }else
+        {
+            player.pause();              // Detener el audio anterior, si estaba en reproducción
+            player.src = src;            // Establecer la fuente del audio actual
+            player.play();               // Reproducir el audio
+            is_playing = true;
+
+            playing_on = $(".playing_on");
+            var play_text = "";
+            if(is_playing)
+                play_text = "En vivo!. Ahora reproduciendo la estación: " + station_name;
+            else
+                play_text = "Ahora en pausa la estación: " + station_name;
+            playing_on.text(play_text);
+            if(player.muted)
+                playing_on.text(play_text + ". Sin volumen.");
+            else
+                playing_on.text(play_text + ". Con volumen.");
+        }
+      }
+
+      function playAudioAgain(src) {      // Función para reproducir audio
+        
+        if(station_name == "")
+        {
+            playing_on = $(".playing_on");
+            //playing_on.textContent = "Selecciona una emisora";
+            last_station = getCookie("last_station");
+
+$("button")[last_station].click();
+        }else
+        {
+            player.pause();
+            player.src = player.src;
+            player.play();               // Reproducir el audio
+            is_playing = true;
+
+            playing_on = $(".playing_on");
+            var play_text = "";
+            if(is_playing)
+                play_text = "En vivo!. Ahora reproduciendo la estación: " + station_name;
+            else
+                play_text = "Ahora en pausa la estación: " + station_name;
+            playing_on.text(play_text);
+            if(player.muted)
+                playing_on.text(play_text + ". Sin volumen.");
+            else
+                playing_on.text(play_text + ". Con volumen.");
+        }
+      }
+
+      function pauseAudio(src) {      // Función para reproducir audio
+        player.pause();              // Detener el audio anterior, si estaba en reproducción
+        is_playing = false;
+        if(station_name == "")
+        {
+            playing_on = $(".playing_on");
+            playing_on.text("Selecciona una emisora");
+        }else
+        {
+            playing_on = $(".playing_on");
+            var play_text = "";
+            if(is_playing)
+                play_text = "En vivo!. Ahora reproduciendo la estación: " + station_name;
+            else
+                play_text = "Ahora en pausa la estación: " + station_name;
+            playing_on.text(play_text);
+            if(player.muted)
+                playing_on.text(play_text + ". Sin volumen.");
+            else
+                playing_on.text(play_text + ". Con volumen.");
+        }
+      }
+
+      function muteAudio(src) {      // Función para reproducir audio
+        player.muted=true;              // Detener el audio anterior, si estaba en reproducción
+        if(station_name == "")
+        {
+            playing_on = $(".playing_on");
+            playing_on.text("Selecciona una emisora");
+        }else
+        {
+            playing_on = $(".playing_on");
+            var play_text = "";
+            if(is_playing)
+                play_text = "En vivo!. Ahora reproduciendo la estación: " + station_name;
+            else
+                play_text = "Ahora en pausa la estación: " + station_name;
+            playing_on.text(play_text);
+            if(player.muted)
+                playing_on.text(play_text + ". Sin volumen.");
+            else
+                playing_on.text(play_text + ". Con volumen.");
+        }
+      }
+
+      function volumeAudio(src) {      // Función para reproducir audio
+        player.muted=false;              // Detener el audio anterior, si estaba en reproducción
+        if(station_name == "")
+        {
+            playing_on = $(".playing_on");
+            playing_on.text("Selecciona una emisora");
+        }else
+        {
+            playing_on = $(".playing_on");
+            var play_text = "";
+            if(is_playing)
+                play_text = "En vivo!. Ahora reproduciendo la estación: " + station_name;
+            else
+                play_text = "Ahora en pausa la estación: " + station_name;
+            playing_on.text(play_text);
+            if(player.muted)
+                playing_on.text(play_text + ". Sin volumen.");
+            else
+                playing_on.text(play_text + ". Con volumen.");
+        }
+      }
+
+      function playButtons(b){
+         station_name = b.textContent;
+         playAudio(b.getAttribute("data-src"));
+          
+         if (lastBtn) {
+             lastBtn.style.color = "black";       // Establecer el último botón seleccionado en negro
+         }
+         b.style.color = "red";              // Establecer el botón seleccionado en rojo
+         lastBtn = b;                        // Almacenar el último botón seleccionado
+      }
+
+      var buttons = document.getElementsByTagName("button");  // Obtener todos los botones
+      
+      for (var i = 0; i < buttons.length; i++) {
+        var btn = buttons[i];
+        var src = btn.getAttribute("data-src");
+        btn.i = i;
+
+        var className = "";
+        
+        btn.addEventListener("click", function(i) {
+            className = this.getAttribute("class");
+            if(unblocked == true)
+                if(className == "latinchain_locked")
+                {
+                  playButtons(this);
+                  setCookie("last_station", this.i);
+                }
+            if(className == "")
+            {
+                playButtons(this);
+                setCookie("last_station", this.i);
+            }
+            if(className == null)
+            {
+                playButtons(this);
+                setCookie("last_station", this.i);
+            }
+        });
+      }
+
+      
+    </script>
+  </body>
+</html>
+<script async src="https://fundingchoicesmessages.google.com/i/pub-7188389010612251?ers=1" nonce="rCZD3I0yl9sqdh0dJy6YIA"></script><script nonce="rCZD3I0yl9sqdh0dJy6YIA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+<script>(function(){'use strict';function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}var ba="function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};
+function ea(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");}var fa=ea(this);function ha(a,b){if(b)a:{var c=fa;a=a.split(".");for(var d=0;d<a.length-1;d++){var e=a[d];if(!(e in c))break a;c=c[e]}a=a[a.length-1];d=c[a];b=b(d);b!=d&&null!=b&&ba(c,a,{configurable:!0,writable:!0,value:b})}}
+var ia="function"==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},l;if("function"==typeof Object.setPrototypeOf)l=Object.setPrototypeOf;else{var m;a:{var ja={a:!0},ka={};try{ka.__proto__=ja;m=ka.a;break a}catch(a){}m=!1}l=m?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}var la=l;
+function n(a,b){a.prototype=ia(b.prototype);a.prototype.constructor=a;if(la)la(a,b);else for(var c in b)if("prototype"!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&&Object.defineProperty(a,c,d)}else a[c]=b[c];a.A=b.prototype}function ma(){for(var a=Number(this),b=[],c=a;c<arguments.length;c++)b[c-a]=arguments[c];return b}
+var na="function"==typeof Object.assign?Object.assign:function(a,b){for(var c=1;c<arguments.length;c++){var d=arguments[c];if(d)for(var e in d)Object.prototype.hasOwnProperty.call(d,e)&&(a[e]=d[e])}return a};ha("Object.assign",function(a){return a||na});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var p=this||self;function q(a){return a};var t,u;a:{for(var oa=["CLOSURE_FLAGS"],v=p,x=0;x<oa.length;x++)if(v=v[oa[x]],null==v){u=null;break a}u=v}var pa=u&&u[610401301];t=null!=pa?pa:!1;var z,qa=p.navigator;z=qa?qa.userAgentData||null:null;function A(a){return t?z?z.brands.some(function(b){return(b=b.brand)&&-1!=b.indexOf(a)}):!1:!1}function B(a){var b;a:{if(b=p.navigator)if(b=b.userAgent)break a;b=""}return-1!=b.indexOf(a)};function C(){return t?!!z&&0<z.brands.length:!1}function D(){return C()?A("Chromium"):(B("Chrome")||B("CriOS"))&&!(C()?0:B("Edge"))||B("Silk")};var ra=C()?!1:B("Trident")||B("MSIE");!B("Android")||D();D();B("Safari")&&(D()||(C()?0:B("Coast"))||(C()?0:B("Opera"))||(C()?0:B("Edge"))||(C()?A("Microsoft Edge"):B("Edg/"))||C()&&A("Opera"));var sa={},E=null;var ta="undefined"!==typeof Uint8Array,ua=!ra&&"function"===typeof btoa;var F="function"===typeof Symbol&&"symbol"===typeof Symbol()?Symbol():void 0,G=F?function(a,b){a[F]|=b}:function(a,b){void 0!==a.g?a.g|=b:Object.defineProperties(a,{g:{value:b,configurable:!0,writable:!0,enumerable:!1}})};function va(a){var b=H(a);1!==(b&1)&&(Object.isFrozen(a)&&(a=Array.prototype.slice.call(a)),I(a,b|1))}
+var H=F?function(a){return a[F]|0}:function(a){return a.g|0},J=F?function(a){return a[F]}:function(a){return a.g},I=F?function(a,b){a[F]=b}:function(a,b){void 0!==a.g?a.g=b:Object.defineProperties(a,{g:{value:b,configurable:!0,writable:!0,enumerable:!1}})};function wa(){var a=[];G(a,1);return a}function xa(a,b){I(b,(a|0)&-99)}function K(a,b){I(b,(a|34)&-73)}function L(a){a=a>>11&1023;return 0===a?536870912:a};var M={};function N(a){return null!==a&&"object"===typeof a&&!Array.isArray(a)&&a.constructor===Object}var O,ya=[];I(ya,39);O=Object.freeze(ya);var P;function Q(a,b){P=b;a=new a(b);P=void 0;return a}
+function R(a,b,c){null==a&&(a=P);P=void 0;if(null==a){var d=96;c?(a=[c],d|=512):a=[];b&&(d=d&-2095105|(b&1023)<<11)}else{if(!Array.isArray(a))throw Error();d=H(a);if(d&64)return a;d|=64;if(c&&(d|=512,c!==a[0]))throw Error();a:{c=a;var e=c.length;if(e){var f=e-1,g=c[f];if(N(g)){d|=256;b=(d>>9&1)-1;e=f-b;1024<=e&&(za(c,b,g),e=1023);d=d&-2095105|(e&1023)<<11;break a}}b&&(g=(d>>9&1)-1,b=Math.max(b,e-g),1024<b&&(za(c,g,{}),d|=256,b=1023),d=d&-2095105|(b&1023)<<11)}}I(a,d);return a}
+function za(a,b,c){for(var d=1023+b,e=a.length,f=d;f<e;f++){var g=a[f];null!=g&&g!==c&&(c[f-b]=g)}a.length=d+1;a[d]=c};function Aa(a){switch(typeof a){case "number":return isFinite(a)?a:String(a);case "boolean":return a?1:0;case "object":if(a&&!Array.isArray(a)&&ta&&null!=a&&a instanceof Uint8Array){if(ua){for(var b="",c=0,d=a.length-10240;c<d;)b+=String.fromCharCode.apply(null,a.subarray(c,c+=10240));b+=String.fromCharCode.apply(null,c?a.subarray(c):a);a=btoa(b)}else{void 0===b&&(b=0);if(!E){E={};c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split("");d=["+/=","+/","-_=","-_.","-_"];for(var e=
+0;5>e;e++){var f=c.concat(d[e].split(""));sa[e]=f;for(var g=0;g<f.length;g++){var h=f[g];void 0===E[h]&&(E[h]=g)}}}b=sa[b];c=Array(Math.floor(a.length/3));d=b[64]||"";for(e=f=0;f<a.length-2;f+=3){var k=a[f],w=a[f+1];h=a[f+2];g=b[k>>2];k=b[(k&3)<<4|w>>4];w=b[(w&15)<<2|h>>6];h=b[h&63];c[e++]=g+k+w+h}g=0;h=d;switch(a.length-f){case 2:g=a[f+1],h=b[(g&15)<<2]||d;case 1:a=a[f],c[e]=b[a>>2]+b[(a&3)<<4|g>>4]+h+d}a=c.join("")}return a}}return a};function Ba(a,b,c){a=Array.prototype.slice.call(a);var d=a.length,e=b&256?a[d-1]:void 0;d+=e?-1:0;for(b=b&512?1:0;b<d;b++)a[b]=c(a[b]);if(e){b=a[b]={};for(var f in e)Object.prototype.hasOwnProperty.call(e,f)&&(b[f]=c(e[f]))}return a}function Da(a,b,c,d,e,f){if(null!=a){if(Array.isArray(a))a=e&&0==a.length&&H(a)&1?void 0:f&&H(a)&2?a:Ea(a,b,c,void 0!==d,e,f);else if(N(a)){var g={},h;for(h in a)Object.prototype.hasOwnProperty.call(a,h)&&(g[h]=Da(a[h],b,c,d,e,f));a=g}else a=b(a,d);return a}}
+function Ea(a,b,c,d,e,f){var g=d||c?H(a):0;d=d?!!(g&32):void 0;a=Array.prototype.slice.call(a);for(var h=0;h<a.length;h++)a[h]=Da(a[h],b,c,d,e,f);c&&c(g,a);return a}function Fa(a){return a.s===M?a.toJSON():Aa(a)};function Ga(a,b,c){c=void 0===c?K:c;if(null!=a){if(ta&&a instanceof Uint8Array)return b?a:new Uint8Array(a);if(Array.isArray(a)){var d=H(a);if(d&2)return a;if(b&&!(d&64)&&(d&32||0===d))return I(a,d|34),a;a=Ea(a,Ga,d&4?K:c,!0,!1,!0);b=H(a);b&4&&b&2&&Object.freeze(a);return a}a.s===M&&(b=a.h,c=J(b),a=c&2?a:Q(a.constructor,Ha(b,c,!0)));return a}}function Ha(a,b,c){var d=c||b&2?K:xa,e=!!(b&32);a=Ba(a,b,function(f){return Ga(f,e,d)});G(a,32|(c?2:0));return a};function Ia(a,b){a=a.h;return Ja(a,J(a),b)}function Ja(a,b,c,d){if(-1===c)return null;if(c>=L(b)){if(b&256)return a[a.length-1][c]}else{var e=a.length;if(d&&b&256&&(d=a[e-1][c],null!=d))return d;b=c+((b>>9&1)-1);if(b<e)return a[b]}}function Ka(a,b,c,d,e){var f=L(b);if(c>=f||e){e=b;if(b&256)f=a[a.length-1];else{if(null==d)return;f=a[f+((b>>9&1)-1)]={};e|=256}f[c]=d;e&=-1025;e!==b&&I(a,e)}else a[c+((b>>9&1)-1)]=d,b&256&&(d=a[a.length-1],c in d&&delete d[c]),b&1024&&I(a,b&-1025)}
+function La(a,b){var c=Ma;var d=void 0===d?!1:d;var e=a.h;var f=J(e),g=Ja(e,f,b,d);var h=!1;if(null==g||"object"!==typeof g||(h=Array.isArray(g))||g.s!==M)if(h){var k=h=H(g);0===k&&(k|=f&32);k|=f&2;k!==h&&I(g,k);c=new c(g)}else c=void 0;else c=g;c!==g&&null!=c&&Ka(e,f,b,c,d);e=c;if(null==e)return e;a=a.h;f=J(a);f&2||(g=e,c=g.h,h=J(c),g=h&2?Q(g.constructor,Ha(c,h,!1)):g,g!==e&&(e=g,Ka(a,f,b,e,d)));return e}function Na(a,b){a=Ia(a,b);return null==a||"string"===typeof a?a:void 0}
+function Oa(a,b){a=Ia(a,b);return null!=a?a:0}function S(a,b){a=Na(a,b);return null!=a?a:""};function T(a,b,c){this.h=R(a,b,c)}T.prototype.toJSON=function(){var a=Ea(this.h,Fa,void 0,void 0,!1,!1);return Pa(this,a,!0)};T.prototype.s=M;T.prototype.toString=function(){return Pa(this,this.h,!1).toString()};
+function Pa(a,b,c){var d=a.constructor.v,e=L(J(c?a.h:b)),f=!1;if(d){if(!c){b=Array.prototype.slice.call(b);var g;if(b.length&&N(g=b[b.length-1]))for(f=0;f<d.length;f++)if(d[f]>=e){Object.assign(b[b.length-1]={},g);break}f=!0}e=b;c=!c;g=J(a.h);a=L(g);g=(g>>9&1)-1;for(var h,k,w=0;w<d.length;w++)if(k=d[w],k<a){k+=g;var r=e[k];null==r?e[k]=c?O:wa():c&&r!==O&&va(r)}else h||(r=void 0,e.length&&N(r=e[e.length-1])?h=r:e.push(h={})),r=h[k],null==h[k]?h[k]=c?O:wa():c&&r!==O&&va(r)}d=b.length;if(!d)return b;
+var Ca;if(N(h=b[d-1])){a:{var y=h;e={};c=!1;for(var ca in y)Object.prototype.hasOwnProperty.call(y,ca)&&(a=y[ca],Array.isArray(a)&&a!=a&&(c=!0),null!=a?e[ca]=a:c=!0);if(c){for(var rb in e){y=e;break a}y=null}}y!=h&&(Ca=!0);d--}for(;0<d;d--){h=b[d-1];if(null!=h)break;var cb=!0}if(!Ca&&!cb)return b;var da;f?da=b:da=Array.prototype.slice.call(b,0,d);b=da;f&&(b.length=d);y&&b.push(y);return b};function Qa(a){return function(b){if(null==b||""==b)b=new a;else{b=JSON.parse(b);if(!Array.isArray(b))throw Error(void 0);G(b,32);b=Q(a,b)}return b}};function Ra(a){this.h=R(a)}n(Ra,T);var Sa=Qa(Ra);var U;function V(a){this.g=a}V.prototype.toString=function(){return this.g+""};var Ta={};function Ua(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^Date.now()).toString(36)};function Va(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)}function Wa(a){this.g=a||p.document||document}Wa.prototype.appendChild=function(a,b){a.appendChild(b)};/*
+
+ SPDX-License-Identifier: Apache-2.0
+*/
+function Xa(a,b){a.src=b instanceof V&&b.constructor===V?b.g:"type_error:TrustedResourceUrl";var c,d;(c=(b=null==(d=(c=(a.ownerDocument&&a.ownerDocument.defaultView||window).document).querySelector)?void 0:d.call(c,"script[nonce]"))?b.nonce||b.getAttribute("nonce")||"":"")&&a.setAttribute("nonce",c)};function Ya(a){a=void 0===a?document:a;return a.createElement("script")};function Za(a,b,c,d,e,f){try{var g=a.g,h=Ya(g);h.async=!0;Xa(h,b);g.head.appendChild(h);h.addEventListener("load",function(){e();d&&g.head.removeChild(h)});h.addEventListener("error",function(){0<c?Za(a,b,c-1,d,e,f):(d&&g.head.removeChild(h),f())})}catch(k){f()}};var $a=p.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ab=p.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),bb=p.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu");function db(a,b,c){this.i=a;this.l=new Wa(this.i);this.g=null;this.j=[];this.m=!1;this.u=b;this.o=c}
+function eb(a){if(a.i.body&&!a.m){var b=function(){fb(a);p.setTimeout(function(){return gb(a,3)},50)};Za(a.l,a.u,2,!0,function(){p[a.o]||b()},b);a.m=!0}}
+function fb(a){for(var b=W(1,5),c=0;c<b;c++){var d=X(a);a.i.body.appendChild(d);a.j.push(d)}b=X(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=W(100,110).toString()+"%";b.style.zIndex=W(2147483544,2147483644).toString();b.style["background-color"]=hb(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=hb(0,10,0,10,0,10);b.style.display="flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=X(a);c.style.width=W(80,
+85).toString()+"%";c.style.maxWidth=W(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=Va(a.l.g,"IMG");d.className=Ua();d.src=$a;d.alt="Warning icon";d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=X(a),f=X(a);f.style["font-weight"]="bold";f.textContent=ab;var g=X(a);g.textContent=bb;Y(a,e,f);Y(a,e,g);Y(a,c,d);Y(a,c,e);Y(a,b,c);a.g=b;a.i.body.appendChild(a.g);b=W(1,5);for(c=
+0;c<b;c++)d=X(a),a.i.body.appendChild(d),a.j.push(d)}function Y(a,b,c){for(var d=W(1,5),e=0;e<d;e++){var f=X(a);b.appendChild(f)}b.appendChild(c);c=W(1,5);for(d=0;d<c;d++)e=X(a),b.appendChild(e)}function W(a,b){return Math.floor(a+Math.random()*(b-a))}function hb(a,b,c,d,e,f){return"rgb("+W(Math.max(a,0),Math.min(b,255)).toString()+","+W(Math.max(c,0),Math.min(d,255)).toString()+","+W(Math.max(e,0),Math.min(f,255)).toString()+")"}function X(a){a=Va(a.l.g,"DIV");a.className=Ua();return a}
+function gb(a,b){0>=b||null!=a.g&&0!=a.g.offsetHeight&&0!=a.g.offsetWidth||(ib(a),fb(a),p.setTimeout(function(){return gb(a,b-1)},50))}
+function ib(a){var b=a.j;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];if(c)b=c.call(b);else if("number"==typeof b.length)b={next:aa(b)};else throw Error(String(b)+" is not an iterable or ArrayLike");for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.j=[];(b=a.g)&&b.parentNode&&b.parentNode.removeChild(b);a.g=null};function jb(a,b,c,d,e){function f(k){document.body?g(document.body):0<k?p.setTimeout(function(){f(k-1)},e):b()}function g(k){k.appendChild(h);p.setTimeout(function(){h?(0!==h.offsetHeight&&0!==h.offsetWidth?b():a(),h.parentNode&&h.parentNode.removeChild(h)):a()},d)}var h=kb(c);f(3)}function kb(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};function Ma(a){this.h=R(a)}n(Ma,T);function lb(a){this.h=R(a)}n(lb,T);var mb=Qa(lb);function nb(a){a=Na(a,4)||"";if(void 0===U){var b=null;var c=p.trustedTypes;if(c&&c.createPolicy){try{b=c.createPolicy("goog#html",{createHTML:q,createScript:q,createScriptURL:q})}catch(d){p.console&&p.console.error(d.message)}U=b}else U=b}a=(b=U)?b.createScriptURL(a):a;return new V(a,Ta)};function ob(a,b){this.m=a;this.o=new Wa(a.document);this.g=b;this.j=S(this.g,1);this.u=nb(La(this.g,2));this.i=!1;b=nb(La(this.g,13));this.l=new db(a.document,b,S(this.g,12))}ob.prototype.start=function(){pb(this)};
+function pb(a){qb(a);Za(a.o,a.u,3,!1,function(){a:{var b=a.j;var c=p.btoa(b);if(c=p[c]){try{var d=Sa(p.atob(c))}catch(e){b=!1;break a}b=b===Na(d,1)}else b=!1}b?Z(a,S(a.g,14)):(Z(a,S(a.g,8)),eb(a.l))},function(){jb(function(){Z(a,S(a.g,7));eb(a.l)},function(){return Z(a,S(a.g,6))},S(a.g,9),Oa(a.g,10),Oa(a.g,11))})}function Z(a,b){a.i||(a.i=!0,a=new a.m.XMLHttpRequest,a.open("GET",b,!0),a.send())}function qb(a){var b=p.btoa(a.j);a.m[b]&&Z(a,S(a.g,5))};(function(a,b){p[a]=function(){var c=ma.apply(0,arguments);p[a]=function(){};b.apply(null,c)}})("__h82AlnkH6D91__",function(a){"function"===typeof window.atob&&(new ob(window,mb(window.atob(a)))).start()});}).call(this);
+
+window.__h82AlnkH6D91__("WyJwdWItNzE4ODM4OTAxMDYxMjI1MSIsW251bGwsbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9iL3B1Yi03MTg4Mzg5MDEwNjEyMjUxIl0sbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hVYTFPZ3N3MlM0ZkJZaVkzcW1WMmxTUTVyRHMyUmtYdHRaa0hqWDhKZW9kZ1FsMUdzSzNycU52d1Y5b0dfdEZMdmtLVnJmT2dHd0lWc1lDQ2hNZDFvZHlnXHUwMDNkXHUwMDNkP3RlXHUwMDNkVE9LRU5fRVhQT1NFRCIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFgwclg1MGk3UHJmV2p4bWdRcHhVY3F3ZHZYWngzOXFPU0toV2JtMjZQOU1zR2dTTUJyb2xIYXJDZkRLUGlRQzBSX05JU2J3OFFDMW8wWnZmRWFIUTVTZkFcdTAwM2RcdTAwM2Q/YWJcdTAwM2QxXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFZoS25ZN0lhdmxnc2JNd284aEhobnJiQVI0QlN2LTdoX3pGcDdrbm5PQ0JvUHNSRGNBSUpxRjkyVWRCY2VESmZpVlgwTXc5RXJJc1N4WXdEMzh2OUY5dWdcdTAwM2RcdTAwM2Q/YWJcdTAwM2QyXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFZTNTNPOXZ3Rzh4eWJlYW1fV21HM2Z6V2pGYUFiLTVRamx4dzBaNHlMVFFuaFBScHp0Snh2ZHB2NkFIYzFHNjJvTnQwUVZxeGJQNy00aVg4THdtOUJfdGdcdTAwM2RcdTAwM2Q/c2JmXHUwMDNkMiIsImRpdi1ncHQtYWQiLDIwLDEwMCwiY0hWaUxUY3hPRGd6T0Rrd01UQTJNVEl5TlRFXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL3B1Yi03MTg4Mzg5MDEwNjEyMjUxLmpzP3VzcXBcdTAwM2RDQkUiXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4VzR6S3FFQmxCWTdDcDQ4X1FEZklIb3JOcGYzYlpiS1RreGdNZ3RZV2pfUk41UGh3d3ZVS3FDYmQwS0pabkxxU25lRGo2QjV2M2RJM2hhdjNHdUJDcFR2d1x1MDAzZFx1MDAzZCJd");</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7188389010612251"
+     crossorigin="anonymous"></script>
+
+
+</head>
+<!-- /wp:html --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:paragraph -->
+<p>RadioForUs, merecido ganador del Pi Hackathon en agosto de 2023, se destaca no solo por su innovación, sino también por su participación activa en el ecosistema de testnet de Pi Network. Esta plataforma no solo ofrece una amplia gama de contenidos, sino que su calidad auditiva se potencia al escucharse a través de la aplicación de Pi Network. Al unir fuerzas con la revolucionaria red de Pi, RadioForus no solo ha marcado un hito en el ámbito de la radio en línea, sino que también ha creado una experiencia auditiva que se disfruta mejor desde la aplicación de Pi. Esta sinergia entre tecnología de vanguardia y contenido de calidad destaca la importancia de RadioForus en la evolución del panorama mediático digital.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:html -->
+<div style="text-align: center; width: 100%">
+<br/><br/>
+<a href="https://mainnet.radioforus.com/politicas-y-terminos-de-radio-for-us/">Políticas y términos de Radioforus</a>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:html -->
+<div id="taboola-below-article-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'alternating-thumbnails-a',
+    container: 'taboola-below-article-thumbnails',
+    placement: 'Below Article Thumbnails',
+    target_type: 'mix'
+  });
+</script>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+<!-- /wp:html --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
