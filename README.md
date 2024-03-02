@@ -1,12 +1,12 @@
 # RadioForUs
-RadioForUs Repository. First app in Pi Ecosystem to listen radio stations around the World. Pi Hackathon winner at August, 2023:
+RadioForUs. First app in Pi Ecosystem to listen radio stations around the World. Pi Hackathon winner at August, 2023:
 https://minepi.com/blog/august-2023-hackathon/
 
 Made in Wordpress, Odoo, PHP and JavaScript. RadioForUs connects with LatinChain Platform being partner of that Pi App.
 
-RadioForUs_wordpress/ contains the theme of RadioStations for Wordpress, enough to run a RadioStation list. It contains complete algorithms to control RadioStations with JavaScript.
+RadioForUs_wordpress/ contains the theme of Radio Stations for Wordpress. It contains complete algorithms to control Radio Stations with JavaScript.
 
-Run it in Astra wordpress theme.
+Run it in Astra wordpress theme. Read https://github.com/pi-apps/radio-for-us/blob/main/SECURITY.md, for suported versions.
 
 # Pi Payment server side
 
